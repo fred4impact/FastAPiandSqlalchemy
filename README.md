@@ -1,0 +1,38 @@
+-- This apis Build with FastAPI SQL achemy 
+
+-- To run this application, run
+uvicorn app.main:app --reload
+after startinf up go to this url
+
+To run:  download the github repo here:
+https://github.com/fred4impact/FastAPiandSqlalchemy
+and  do the  below steps 
+
+1.Download into your project directory 
+2.create a virtual enviroments : python3 -m venv env
+3.if pip is not installed on your enviroemtn install pip
+4 .and run  pip3 install -r requirements.txt
+5. to run the app open the terminal and run uvicorn app.main:app --reload
+6. to view the api endpointsopen your browserand type http://localhost:8000/events/
+
+ENDPOINTS URLS:
+
+### URLS ### 
+GET ALL events 
+http://localhost:8000/events/ # to GET all events
+
+##GET single events 
+http://localhost:8000/events{event_id}  # to GET single events 
+
+## POST events
+http://localhost:8000/events/ # to POST or create new events
+
+#DELETE events
+http://localhost:8000/events{event_id}
+ # to DELETE EVENT
+
+## UPDATE
+ http://localhost:8000/events{event_id}
+
+
+-- Other stuff 
