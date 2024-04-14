@@ -18,20 +18,19 @@ and  do the  below steps
 ENDPOINTS URLS:
 
 ### URLS ### 
-GET ALL events 
+## Get all events 
 http://localhost:8000/events/ # to GET all events
 
-##GET single events 
+## Get single events 
 http://localhost:8000/events{event_id}  # to GET single events 
 
-## POST events
+## Post events
 http://localhost:8000/events/ # to POST or create new events
 
-#DELETE events
+## Delete events
 http://localhost:8000/events{event_id}
- # to DELETE EVENT
 
-## UPDATE
+## Update
  http://localhost:8000/events{event_id}
 
 
