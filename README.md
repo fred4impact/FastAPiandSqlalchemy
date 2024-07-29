@@ -86,7 +86,9 @@ exec uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 ############# END ##############
 
-# sudo vi /etc/supervisor/conf.d/fastapi.conf. add teh script below to the file ###
+# sudo vi /etc/supervisor/conf.d/fastapi.conf. 
+Add the script below to the file  /etc/supervisor/conf.d/fastapi.conf. 
+
 ```
 [program:uvicorn]
 socket=tcp://localhost:8000
