@@ -73,7 +73,7 @@ http://localhost:8000/events{event_id}
    24  sudo supervisorctl update
    25  sudo supervisorctl restart all
    26  sudo supervisorctl start uvicorn
-  
+##  
  
 
 ############## START.SH. ##################
