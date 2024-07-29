@@ -40,9 +40,11 @@ http://localhost:8000/events{event_id}
 
 # The deploymnet that Works 
 # Steps
-#Login into your AWS Console and create an EC2 choose ubuntu 
-#create a security group ssh to you ip ,http port 80, https port 443 andcustom tcp port 8000
-#SSH Into your ec2 start configuration
+```
+Login into your AWS Console and create an EC2 choose ubuntu 
+create a security group ssh to you ip ,http port 80, https port 443 andcustom tcp port 8000
+SSH Into your ec2 start configuration
+```
 
 # Configuration
 
