@@ -102,7 +102,7 @@ stopsignal=QUIT
                
 ####. 
 
-# WORKED. VIEW THE API WITH THE THE LINK BELOW CHANGE TEH IP TO TH EEC2 IP ADDRESS
+## WORKED. VIEW THE API WITH THE THE LINK BELOW CHANGE TEH IP TO TH EEC2 IP ADDRESS
 
 http://YOUR_EC2_IPA_DDRESS:8000/docs#/
 
@@ -114,7 +114,7 @@ sudo tail -f /var/log/supervisor/fastapi_access.log
 sudo tail -f /var/log/supervisor/fastapi_error.log
 ```
 
-# COMMAND TO START AND REATSRT THE SUPERVISOR
+## COMMAND TO START AND REATSRT THE SUPERVISOR
 ```
 sudo supervisorctl restart uvicorn
 sudo supervisorctl status
@@ -124,4 +124,4 @@ sudo supervisorctl restart all
 sudo supervisorctl start uvicorn
 ```
 
-# end using the suoervisor the deploy 
+## The end using supervisor and uvicorn to deploy to EC2
