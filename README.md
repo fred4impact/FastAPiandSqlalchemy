@@ -125,3 +125,5 @@ sudo supervisorctl start uvicorn
 ```
 
 ## The end using supervisor and uvicorn to deploy to EC2
+
+#Next update witl be for using the www-data user in /var/www/ directory 
