@@ -46,33 +46,32 @@ http://localhost:8000/events{event_id}
 
 # Configuration
 
----
-    1  sudo apt upgrade -y
-    2  sudo apt update
-    3  sudo apt upgrade -y
-    4  sudo apt install python3-pip -y
-    5  sudo apt install git -y
-    6  git clone https://github.com/fred4impact/FastAPiandSqlalchemy.git
-    7  ls
-    8  sudo apt install python3-virtualenv
-   10  sudo pip3 install virtualenv
-   11  virtualenv venv
-   12  source venv/bin/activate
-   13  pip3 install -r requirements.txt
-   14  vi start.sh
-   15  chmod +x start.sh
-   16  sudo apt install supervisor -y
-   17  sudo vi /etc/supervisor/conf.d/fastapi.conf
-   18  sudo supervisorctl status
-   19  sudo supervisorctl reread
-   20  sudo supervisorctl update
-   21  sudo vi /etc/supervisor/conf.d/fastapi.conf
-   22  sudo supervisorctl status
-   23  sudo supervisorctl reread
-   24  sudo supervisorctl update
-   25  sudo supervisorctl restart all
-   26  sudo supervisorctl start uvicorn
---  
+    -   sudo apt upgrade -y
+    -   sudo apt update
+    -   sudo apt upgrade -y
+    -   sudo apt install python3-pip -y
+    -  sudo apt install git -y
+    -  git clone https://github.com/fred4impact/FastAPiandSqlalchemy.git
+    -  ls
+    -  sudo apt install python3-virtualenv
+    -  sudo pip3 install virtualenv
+    -  virtualenv venv
+    -  source venv/bin/activate
+    - pip3 install -r requirements.txt
+    -  vi start.sh
+    -  chmod +x start.sh
+    -  sudo apt install supervisor -y
+    -  sudo vi /etc/supervisor/conf.d/fastapi.conf
+    -  sudo supervisorctl status
+    -  sudo supervisorctl reread
+    -  sudo supervisorctl update
+    -  sudo vi /etc/supervisor/conf.d/fastapi.conf
+    -  sudo supervisorctl status
+    -  sudo supervisorctl reread
+    -  sudo supervisorctl update
+    -  sudo supervisorctl restart all
+    - sudo supervisorctl start uvicorn
+ 
  
 
 ############## START.SH. ##################
