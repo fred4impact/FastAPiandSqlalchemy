@@ -215,5 +215,24 @@ sudo supervisorctl start uvicorn
 
 
 
+# API END POINTS URL 
+
+### Get all events 
+http://localhost:8000/events/ # to GET all events
+
+### Get single events 
+http://localhost:8000/events{event_id}  # to GET single events 
+
+### Post events
+http://localhost:8000/events/ # to POST or create new events
+
+### Delete events
+http://localhost:8000/events{event_id}
+
+### Update
+ http://localhost:8000/events{event_id}
+
+
+
 
 
