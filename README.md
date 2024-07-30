@@ -23,7 +23,7 @@ and  do the  below steps
 -- deploymnet steps 
 
 
-# How I Deploy and run the API endpoint on AWS EC2 usiing supervisor and uvicorn 
+# How I deploy and run these fastAPI endpoint on AWS EC2 usiing supervisor and uvicorn 
 
 ## Steps
 
