@@ -207,7 +207,7 @@ sudo supervisorctl start uvicorn
   http://52.200.77.115:8000/docs#/.  http:/TOUR_EC2_IP_ADDRESS:8000/docs#/
 
   ### YOU CAN CREATE A LOAD BALANCER ABD ROUT 53 NAME TO LINK TO YOUR api 
-```  
+ 
 
 
   
