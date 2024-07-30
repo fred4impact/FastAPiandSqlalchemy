@@ -125,6 +125,8 @@ sudo supervisorctl start uvicorn
 ```
 
  # STEPS
+
+ ```
   # SSH into Your EC2 Instance:
    ssh -i your-key.pem ubuntu@your-ec2-public-dns
 
