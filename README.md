@@ -1,6 +1,8 @@
--- This apis Build with FastAPI SQL achemy 
+-- This API is  Build with FastAPI SQL achemy 
 
--- To run this application, run
+-- To run this application, 
+run
+```
 uvicorn app.main:app --reload
 after startinf up go to this url
 
@@ -15,24 +17,8 @@ and  do the  below steps
 5. to run the app open the terminal and run uvicorn app.main:app --reload
 6. to view the api endpointsopen your browserand type http://localhost:8000/events/
 
-ENDPOINTS URLS:
 
-### URLS ### 
-## Get all events 
-http://localhost:8000/events/ # to GET all events
-
-## Get single events 
-http://localhost:8000/events{event_id}  # to GET single events 
-
-## Post events
-http://localhost:8000/events/ # to POST or create new events
-
-## Delete events
-http://localhost:8000/events{event_id}
-
-## Update
- http://localhost:8000/events{event_id}
-
+```
 
 -- deploymnet steps 
 
