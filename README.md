@@ -133,10 +133,12 @@ sudo supervisorctl start uvicorn
 
 
 # Another Way to setup
+
 # Step-by-Step Guide to Set Up FastAPI on AWS EC2 with Supervisor in with www- user data and in /var/ww directory
+
 # STEPS
 
-  ```
+ ```
   #SSH into Your EC2 Instance:
    ssh -i your-key.pem ubuntu@your-ec2-public-dns
 
@@ -215,7 +217,7 @@ sudo supervisorctl start uvicorn
    sudo tail -f /var/log/supervisor/fastapi_error.log
    sudo tail -f /var/log/supervisor/supervisord.log
 
-  ```
+ ```
   
   ### View Your application on 
   http://52.200.77.115:8000/docs#/.  http:/TOUR_EC2_IP_ADDRESS:8000/docs#/
