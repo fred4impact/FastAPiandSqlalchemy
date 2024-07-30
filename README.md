@@ -34,21 +34,20 @@ http://localhost:8000/events{event_id}
  http://localhost:8000/events{event_id}
 
 
--- Other stuff 
+-- deploymnet steps 
 
-# Deployment Steps on AWS EC2
 
-# How to Deploy and run the API endpoint on AWS EC2 usiing supervisor and uvicorn 
+# How I Deploy and run the API endpoint on AWS EC2 usiing supervisor and uvicorn 
 
 ## Steps
 ```
 Login into your AWS Console and create an EC2 choose ubuntu 
 create a security group ssh to you ip ,http port 80, https port 443 andcustom tcp port 8000
 SSH Into your ec2 start configuration
-```
 
 # Configuration
 
+```
     -   sudo apt upgrade -y
     -   sudo apt update
     -   sudo apt upgrade -y
@@ -74,12 +73,12 @@ SSH Into your ec2 start configuration
     -  sudo supervisorctl update
     -  sudo supervisorctl restart all
     - sudo supervisorctl start uvicorn
- 
+ ```
  
 
 # START.SH. 
-```
- 
+
+``` 
 #!/bin/bash
 source /home/ubuntu/fastapi/venv/bin/activate
 exec uvicorn main:app --host 0.0.0.0 --port 8000
