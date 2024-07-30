@@ -38,8 +38,9 @@ http://localhost:8000/events{event_id}
 
 # Deployment Steps on AWS EC2
 
-# The deploymnet that Works 
-# Steps
+# How to Deploy and run the API endpoint on AWS EC2 usiing supervisor and uvicorn 
+
+## Steps
 ```
 Login into your AWS Console and create an EC2 choose ubuntu 
 create a security group ssh to you ip ,http port 80, https port 443 andcustom tcp port 8000
