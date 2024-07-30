@@ -211,7 +211,6 @@ sudo supervisorctl start uvicorn
 
   ### YOU CAN CREATE A LOAD BALANCER ABD ROUT 53 NAME TO LINK TO YOUR api 
   
-```
 
 
   
