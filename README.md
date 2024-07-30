@@ -164,7 +164,7 @@ sudo supervisorctl start uvicorn
 
    #!/bin/bash
    source /var/www/fastapi/venv/bin/activate
-   exec uvicorn main:app --host 0.0.0.0 --port 8000
+   exec uvicorn app.main:app --host 0.0.0.0 --port 8000
 
    # Make the Script Executable:
    chmod +x /var/www/fastapi/start.sh
@@ -180,17 +180,17 @@ sudo supervisorctl start uvicorn
     #  Use these content below in the  /var/www/fastpi   
   
   [program:uvicorn]
-   socket=tcp://localhost:8000
-   command=/var/www/fastapi/start.sh
-   directory=/var/www/fastapi
-   user=www-data
-   autostart=true
-   autorestart=true
-   stdout_logfile=/var/log/supervisor/fastapi_access.log
-   stderr_logfile=/var/log/supervisor/fastapi_error.log
-   stdout_logfile=/var/log/supervisor/fastapi_access.log
-   stderr_logfile=/var/log/supervisor/fastapi_error.log
-   stopsignal=QUIT
+  socket=tcp://localhost:8000
+  command=/var/www/fastapi/start.sh
+  process_num=4
+  directory=/var/www/fastapi
+  user=www-data
+  autostart=true
+  autorestart=true
+  stdout_logfile=/var/log/supervisor/fastapi_access.log
+  stderr_logfile=/var/log/supervisor/fastapi_error.log
+  stopsignal=QUIT
+
 
   # Reload Supervisor Configuration:
    sudo supervisorctl reread
