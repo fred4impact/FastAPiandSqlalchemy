@@ -183,14 +183,15 @@ sudo supervisorctl start uvicorn
    # Make the Script Executable:
    chmod +x /var/www/fastapi/start.sh
    
-   #Switch Back to ubuntu User:
-   exit
+   # Switch Back to ubuntu User:
+
+    exit
 
    #Edit the Supervisor Configuration File:
     sudo vi  /etc/supervisor/conf.d/fastapi.conf
     
     # Add  the following content
-    #  Use these for the /ar/www/fastpi www user data 
+    #  Use these content below in the  /var/www/fastpi   
   
   [program:uvicorn]
    socket=tcp://localhost:8000
