@@ -115,16 +115,20 @@ sudo supervisorctl start uvicorn
 
 ## The end using supervisor and uvicorn to deploy to EC2
 
-#Next update witl be for using the www-data user in /var/www/ directory 
+- Next update witl be for using the www-data user in /var/www/ directory 
+- Another Way to setup
 
-
-# Another Way to setup
 
 # Step-by-Step Guide to Set Up FastAPI on AWS EC2 with Supervisor in with www- user data and in /var/ww directory
 
 # STEPS
+
+
+
+
 ```
-  #SSH into Your EC2 Instance:
+ # STEPS
+  # SSH into Your EC2 Instance:
    ssh -i your-key.pem ubuntu@your-ec2-public-dns
 
  # Update Package Lists and Install Required Packages:
@@ -206,13 +210,12 @@ sudo supervisorctl start uvicorn
   http://52.200.77.115:8000/docs#/.  http:/TOUR_EC2_IP_ADDRESS:8000/docs#/
 
   ### YOU CAN CREATE A LOAD BALANCER ABD ROUT 53 NAME TO LINK TO YOUR api 
+  
 ```
- 
-Thanks
 
 
-
-
+  
+```
 # API END POINTS URL 
 
 ### Get all events 
@@ -230,7 +233,7 @@ http://localhost:8000/events{event_id}
 ### Update
  http://localhost:8000/events{event_id}
 
-
+```
 
 
 
