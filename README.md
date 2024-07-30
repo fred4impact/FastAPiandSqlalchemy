@@ -26,6 +26,7 @@ and  do the  below steps
 # How I Deploy and run the API endpoint on AWS EC2 usiing supervisor and uvicorn 
 
 ## Steps
+
 ```
 Login into your AWS Console and create an EC2 choose ubuntu 
 create a security group ssh to you ip ,http port 80, https port 443 andcustom tcp port 8000
@@ -121,12 +122,8 @@ sudo supervisorctl start uvicorn
 
 # Step-by-Step Guide to Set Up FastAPI on AWS EC2 with Supervisor in with www- user data and in /var/ww directory
 
-# STEPS
-
-
-
-
 ```
+
  # STEPS
   # SSH into Your EC2 Instance:
    ssh -i your-key.pem ubuntu@your-ec2-public-dns
@@ -210,7 +207,7 @@ sudo supervisorctl start uvicorn
   http://52.200.77.115:8000/docs#/.  http:/TOUR_EC2_IP_ADDRESS:8000/docs#/
 
   ### YOU CAN CREATE A LOAD BALANCER ABD ROUT 53 NAME TO LINK TO YOUR api 
-  
+```  
 
 
   
