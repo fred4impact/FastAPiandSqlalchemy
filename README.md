@@ -76,14 +76,15 @@ SSH Into your ec2 start configuration
  ```
  
 
-# START.SH. 
+# content to go in start.sh
 
 ``` 
 #!/bin/bash
 source /home/ubuntu/fastapi/venv/bin/activate
 exec uvicorn main:app --host 0.0.0.0 --port 8000
-
 ```
+
+
 ############# END ##############
 
 # sudo vi /etc/supervisor/conf.d/fastapi.conf. 
